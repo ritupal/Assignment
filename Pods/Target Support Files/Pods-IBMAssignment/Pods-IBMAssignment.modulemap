@@ -1,0 +1,6 @@
+framework module Pods_IBMAssignment {
+  umbrella header "Pods-IBMAssignment-umbrella.h"
+
+  export *
+  module * { export * }
+}

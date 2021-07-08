@@ -1,0 +1,6 @@
+framework module Pods_IBMAssignment_IBMAssignmentUITests {
+  umbrella header "Pods-IBMAssignment-IBMAssignmentUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

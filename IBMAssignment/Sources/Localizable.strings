@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  IBMAssignment
+
+  Created by Ritu pal on 07/07/21.
+  
+*/
+
+// MARK: - Error
+Error_general = "An error occured";
+Error_title = "Error!";
+Error_parsing = "A parsing error occured";
