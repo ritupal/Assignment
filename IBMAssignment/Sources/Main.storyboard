@@ -29,23 +29,13 @@
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="tBd-ST-wEA"/>
                                                 </connections>
                                             </view>
-                                            <mapView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5WA-KP-MZ7">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
-                                                <connections>
-                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="2EP-gi-mPa"/>
-                                                </connections>
-                                            </mapView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="5WA-KP-MZ7" firstAttribute="leading" secondItem="B9T-mV-OwV" secondAttribute="leading" id="9En-Nb-Ivt"/>
-                                            <constraint firstItem="5WA-KP-MZ7" firstAttribute="top" secondItem="B9T-mV-OwV" secondAttribute="top" id="J7H-4W-fNl"/>
                                             <constraint firstAttribute="trailing" secondItem="g3b-8Z-lHG" secondAttribute="trailing" id="Nh7-Z0-2SN"/>
                                             <constraint firstItem="g3b-8Z-lHG" firstAttribute="top" secondItem="B9T-mV-OwV" secondAttribute="top" id="TjF-oI-REh"/>
                                             <constraint firstAttribute="bottom" secondItem="g3b-8Z-lHG" secondAttribute="bottom" id="VMV-Ia-fal"/>
                                             <constraint firstItem="g3b-8Z-lHG" firstAttribute="leading" secondItem="B9T-mV-OwV" secondAttribute="leading" id="Yly-PW-DBz"/>
-                                            <constraint firstAttribute="trailing" secondItem="5WA-KP-MZ7" secondAttribute="trailing" id="kkm-R1-ACk"/>
-                                            <constraint firstAttribute="bottom" secondItem="5WA-KP-MZ7" secondAttribute="bottom" id="xc2-d1-7gD"/>
                                         </constraints>
                                     </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vI2-sx-VEP">

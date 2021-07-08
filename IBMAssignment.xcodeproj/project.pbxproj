@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0DD2CEDD53069DC3E408DF66 /* Pods_IBMAssignment_IBMAssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C019A3B8EB7199AF4B0AFC0 /* Pods_IBMAssignment_IBMAssignmentUITests.framework */; };
-		875EB6EF2695E379009B9CBC /* VehicleAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875EB6EE2695E379009B9CBC /* VehicleAnnotation.swift */; };
 		878B6A6B269578BA00ABD172 /* IBMAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878B6A6A269578BA00ABD172 /* IBMAssignmentTests.swift */; };
 		878B6A76269578BA00ABD172 /* IBMAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878B6A75269578BA00ABD172 /* IBMAssignmentUITests.swift */; };
 		878B6AA226957B6900ABD172 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878B6A9B26957B6900ABD172 /* AppDelegate.swift */; };
@@ -55,7 +54,6 @@
 		00A5962DAC1048DD03B620F3 /* Pods-IBMAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBMAssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-IBMAssignmentTests/Pods-IBMAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
 		349B4E925C7BCCB681556923 /* Pods-IBMAssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBMAssignmentTests.release.xcconfig"; path = "Target Support Files/Pods-IBMAssignmentTests/Pods-IBMAssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
 		57F133A655AF7C534838CD9B /* Pods_IBMAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IBMAssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		875EB6EE2695E379009B9CBC /* VehicleAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleAnnotation.swift; sourceTree = "<group>"; };
 		878B6A50269578AE00ABD172 /* IBMAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBMAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		878B6A66269578BA00ABD172 /* IBMAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBMAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		878B6A6A269578BA00ABD172 /* IBMAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBMAssignmentTests.swift; sourceTree = "<group>"; };
@@ -278,7 +276,6 @@
 				875EB6E32695C7EC009B9CBC /* Model */,
 				875EB6D22695C7C7009B9CBC /* View */,
 				875EB6D32695C7C7009B9CBC /* ViewModel */,
-				875EB6EE2695E379009B9CBC /* VehicleAnnotation.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -599,7 +596,6 @@
 				878B6AD52695800100ABD172 /* VehicleTableViewCell.swift in Sources */,
 				878B6B3E2695BBB300ABD172 /* Constant.swift in Sources */,
 				878B6B1026958C0500ABD172 /* VehicleModel.swift in Sources */,
-				875EB6EF2695E379009B9CBC /* VehicleAnnotation.swift in Sources */,
 				878B6AA426957B6900ABD172 /* SceneDelegate.swift in Sources */,
 				878B6AB126957BCF00ABD172 /* VehicleViewController.swift in Sources */,
 				878B6AEC269586B000ABD172 /* RequestModel.swift in Sources */,

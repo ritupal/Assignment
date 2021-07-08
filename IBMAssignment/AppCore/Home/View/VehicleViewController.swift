@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import MapKit
 import GoogleMaps
 
 class VehicleViewController: UIViewController {
@@ -14,7 +13,6 @@ class VehicleViewController: UIViewController {
     // MARK: Outlets
     @IBOutlet weak var viewMapContainer: UIView!
     @IBOutlet weak var mapView: GMSMapView!
-//    @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var buttonToggle: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
     
@@ -25,7 +23,6 @@ class VehicleViewController: UIViewController {
         super.viewDidLoad()
         setupTableView()
         getVehicleList()
-        // Do any additional setup after loading the view.
     }
     
     //MARK: Setup
@@ -77,7 +74,6 @@ class VehicleViewController: UIViewController {
     
     private func setUpMapView() {
         if let vehicles = viewModel.vehicles, vehicles.count > 0 {
-            let initalLocation = CLLocation(latitude: vehicles[0].location.latitude, longitude: vehicles[0].location.longitude)
             self.mapView.camera = GMSCameraPosition(latitude: vehicles[0].location.latitude, longitude: vehicles[0].location.longitude, zoom: 14.0)
             self.addmarkers(vehicles: vehicles)
         }
@@ -94,34 +90,6 @@ class VehicleViewController: UIViewController {
             marker.map = mapView
         }
     }
-//    private func setUpMapView() {
-//        if let vehicles = viewModel.vehicles, vehicles.count > 0 {
-//            let initalLocation = CLLocation(latitude: vehicles[0].location.latitude, longitude: vehicles[0].location.longitude)
-//            mapView.centerToLocation(initalLocation)
-//            let region = MKCoordinateRegion(
-//                center: initalLocation.coordinate,
-//                latitudinalMeters: 500,
-//                longitudinalMeters: 600)
-//            mapView.setCameraBoundary(
-//                MKMapView.CameraBoundary(coordinateRegion: region),
-//                animated: true)
-//
-//            let zoomRange = MKMapView.CameraZoomRange(maxCenterCoordinateDistance: 20000)
-//            mapView.setCameraZoomRange(zoomRange, animated: true)
-//            self.setupAnnotations(vehicles: vehicles)
-//        }
-//    }
-//
-//    private func setupAnnotations(vehicles: [Vehicle]) {
-//
-//        for vehicle in vehicles {
-//
-//            let coordinates = CLLocationCoordinate2D(latitude: vehicle.location.latitude, longitude: vehicle.location.longitude)
-//            let annotation = VehicleAnnotation(title: vehicle.details.fullName, name: vehicle.modelName, imageURL: vehicle.image, coordinate: coordinates)
-//            mapView.addAnnotation(annotation)
-//        }
-//        mapView.showAnnotations(mapView.annotations, animated: false)
-//    }
 }
 
 extension VehicleViewController: UITableViewDataSource, UITableViewDelegate {
@@ -137,34 +105,3 @@ extension VehicleViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
 }
-
-//extension MKMapView: MKMapViewDelegate {
-//    func centerToLocation(_ location: CLLocation, regionRadius: CLLocationDistance = 1000) {
-//        let coordinateRegion = MKCoordinateRegion(
-//            center: location.coordinate,
-//            latitudinalMeters: regionRadius,
-//            longitudinalMeters: regionRadius)
-//        setRegion(coordinateRegion, animated: true)
-//    }
-//
-//
-//    public func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-//        guard let annotation = annotation as? VehicleAnnotation else {
-//            return nil
-//        }
-//
-//        let reuseId = "Pin"
-//        var pinView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseId)
-//        if pinView == nil {
-//            pinView = MKAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
-//            pinView?.canShowCallout = true
-//            let data = NSData(contentsOf: URL(string: annotation.imageUrl!)!)
-//            pinView?.image = UIImage(data: data! as Data)
-//        }
-//        else {
-//            pinView?.annotation = annotation
-//        }
-//
-//        return pinView
-//    }
-//}
