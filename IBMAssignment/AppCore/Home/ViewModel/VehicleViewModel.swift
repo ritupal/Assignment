@@ -17,13 +17,11 @@ import Foundation
         services.vehiclesList { [weak self] (result) in
             switch result {
             case .success(let response):
-                print("Response \(response)")
                 self?.vehicles = response
                 completion?(nil)
                 break
             case .failure(let error):
                 completion?(error.message)
-                print("Error in api \(error.message)")
                 break
             }
         }
