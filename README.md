@@ -30,6 +30,7 @@ This application is used to show the cars in the list and then plot them on the 
 
 **App UI:**
 ![Simulator Screen Shot - iPhone 12 - 2021-07-08 at 12 04 51](https://user-images.githubusercontent.com/39966383/124893063-0a24cf00-dff8-11eb-939b-b5f9762906a1.png)
+![Simulator Screen Shot - iPhone 12 - 2021-07-08 at 12 05 26](https://user-images.githubusercontent.com/39966383/124893169-21fc5300-dff8-11eb-8889-5f46e64d999b.png)
 
 
 	
