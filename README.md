@@ -29,8 +29,8 @@ This application is used to show the cars in the list and then plot them on the 
 **Services**: This file is used to get all the list of the vehicles from the service manager.
 
 **App UI:**
-![Uploading Simulator Screen Shot - iPhone 12 - 2021-07-08 at 12.04.51.png…]()
-![Uploading Simulator Screen Shot - iPhone 12 - 2021-07-08 at 12.05.26.png…]()
+![Simulator Screen Shot - iPhone 12 - 2021-07-08 at 12 04 51](https://user-images.githubusercontent.com/39966383/124893063-0a24cf00-dff8-11eb-939b-b5f9762906a1.png)
+
 
 	
 	
